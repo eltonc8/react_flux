@@ -1,5 +1,5 @@
-import * as ACTIONS from "../actions/storefront_actions";
-import * as UTILS from "../util/storefront_util";
+import * as ACTIONS from "../actions/item_action";
+import * as UTILS from "../util/items_util";
 
 const preprocessData = (data) => {
   let itemsObj = JSON.parse(data);

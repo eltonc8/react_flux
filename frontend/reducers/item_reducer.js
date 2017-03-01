@@ -1,4 +1,4 @@
-import * as ACTIONS from '../actions/storefront_actions';
+import * as ACTIONS from '../actions/item_action';
 import merge from 'lodash/merge';
 
 const defaultState = {}
