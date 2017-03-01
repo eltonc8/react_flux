@@ -6,7 +6,7 @@ const defaultState = {}
 const ItemReducer = (state = defaultState, action) => {
   switch(action.type){
     case "RECEIVE_ITEMS":
-      let newState = merge(defaultState, action.items);
+      let newState = merge({}, defaultState, action.items);
       return newState;
     default: 
       return state
