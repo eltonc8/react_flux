@@ -13,7 +13,7 @@ const preprocessData = (data) => {
 const ItemMiddleware = ({state, dispatch}) => next => action => {
   switch(action.type){
     case "GET_ITEMS":
-      let success = (items) => {dispatch(ACTIONS.receiveItems(items))}
+      let success = (items) => {dispatch(ACTIONS.receiveItems(preprocessData(items)))}
       UTILS.fetchItems(success);
       return next(action);
     default:

@@ -1,8 +1,8 @@
-const getItems = () => ({
+export const getItems = () => ({
   type: "GET_ITEMS"
 })
 
-const receiveItems = (items) => ({
+export const receiveItems = (items) => ({
   type: "RECEIVE_ITEMS",
   items: items
 })
